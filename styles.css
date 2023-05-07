@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap');
+body{
+    margin: 0;
+    background-color: rgb(247, 247, 247);
+    scroll-behavior: smooth;
+    font-family:Montserrat ;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    position: sticky;
+    background-color:transparent;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #d5cc68;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: transparent;
+    color: rgb(11, 10, 7);
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .video-col{
+    color: white;
+    width: 100%;
+    height: auto;
+   background-color: red;
+  }
+  .col-1{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+  .box-1{
+    border-radius: 20px 20px 20px 20px;
+    background-color: transparent;
+    border: none ;
+}
+
+
+.box-1 h1,h4{
+    background-color: white;
+    font-weight: bolder;
+    color: white;
+}
+.box-1 h1,h2:nth-last-child(2){
+    background-color: transparent;
+}
+  #handimg{
+    width: 300px;
+  }
+  #handimg-2{
+    width: 300px;
+  }
+  #handimg-1{
+    width: 200px;
+  }
+  .box-1 h4{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #030302;
+    font-weight: bolder;
+    color: white;
+}
+#btn1{
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 20px 20px;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+#btn2{
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 20px 20px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(9, 99, 223);
+    color: rgb(249, 246, 246);
+    border: none;
+}
+.col-2{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+  .box-2, h1{
+    font-size: 20px;
+    border: none;
+   
+  }
+  .col-3{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+  #btn-book{
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: rgb(9, 99, 223);
+  }
+  .ad-col{
+    width: 400px;
+    height: 380px;
+    background-color: rgb(9, 99, 223);
+  }
+#paragram{
+    font-size: small;
+}
+.box-3 h1{
+    font-size:17px;
+    border: none;
+}
+.box-3{
+  border-radius: 20px 20px 20px 20px;
+    background: white;
+
+  display: inline-block;
+  height: 380px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.col-4{
+  background-color:transparent;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .box-4{
+    text-align: center;
+  }
+  .day1{
+    display: none;
+  }
+  .textbox-day{
+    width: 50%;
+    background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: auto;
+  margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .col-6{
+    background-image: url(icon/backimage.svg);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .contact-col{
+    color: red;
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  #contact-img{
+    width: 30%;
+    height: auto;
+  }
+  #video{
+    width: 200px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  width: 50%;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+.container3 {
+  width: 50%;
+
+  border: 2px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container3 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container3 span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container3 {
+    text-align: center;
+  }
+
+  .container3 img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+.test-{
+  height: 400px;
+  overflow: scroll;
+}
+.footer{
+  border-radius: 10px 10px 10px 10px;
+background-color: #de0623;
+  display: flex;
+}
+.footer-1{
+  font-weight: bolder;
+  color: white;
+  border: none;
+  width: 100%;
+  height: auto;
+  background-color: #de0623;
+}
+.footer-2{
+  background-color: #de0623;
+}
+  
+@media screen and (max-width: 1000px) {
+    .box-1 h1,h2:nth-last-child(2){
+        background-color: transparent;
+        /* margin-top: -70px; */
+        color: white;
+        font-size: 20px;
+    }
+    #btn2{
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-radius: 20px 20px 20px 20px;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(9, 99, 223);
+        color: rgb(249, 246, 246);
+        border: none;
+    }
+    #handimg-2{
+        width: 200px;
+        height: 200px;
+      }
+      .ad-col{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(9, 99, 223);
+      }
+      .textbox-day{
+        width: 90%;
+        background: #fff;
+      border-radius: 2px;
+      display: inline-block;
+      height: auto;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+      #contact-img{
+        width: 100%;
+        height: auto;
+      }
+      .container {
+        width: 80%;
+        border-radius: 5px;
+        background-color: transparent;
+        padding: 20px;
+      }
+      .footer{
+        border-radius: 10px 10px 10px 10px;
+      background-color: #de0623;
+        display: block;
+      }
+      .footer-1{
+        font-weight: bolder;
+        color: white;
+        border: none;
+        width: 100%;
+        height: auto;
+        background-color: #de0623;
+      }
+      .footer-2{
+        background-color: #de0623;
+      }
+      .footer-3{
+        background-color: #de0623;
+
+
+      }
+}
